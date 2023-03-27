@@ -16,12 +16,12 @@ public class SymbolLeaf extends AbstractTextComponent {
     }
 
     @Override
-    public void add(AbstractTextComponent textComponent) throws HandlingException {
+    public void add(AbstractTextComponent textComponent) {
 
     }
 
     @Override
-    public void remove(AbstractTextComponent textComponent) throws HandlingException {
+    public void remove(AbstractTextComponent textComponent) {
 
     }
 
