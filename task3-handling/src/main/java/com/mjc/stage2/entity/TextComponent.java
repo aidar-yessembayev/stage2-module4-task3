@@ -16,29 +16,27 @@ public class TextComponent extends AbstractTextComponent {
 
     @Override
     public String operation() {
-        // return component type
-
-        size = componentList.size();
+        StringBuilder result = new StringBuilder();
 
         for (AbstractTextComponent component : componentList) {
-            component.operation();
+            result.append(component.operation());
         }
 
-        return null;
+        return result.toString();
     }
 
     @Override
-    public void add(AbstractTextComponent textComponent) throws HandlingException {
+    public void add(AbstractTextComponent textComponent) {
         componentList.add(textComponent);
     }
 
     @Override
-    public void remove(AbstractTextComponent textComponent) throws HandlingException {
+    public void remove(AbstractTextComponent textComponent) {
         componentList.remove(textComponent);
     }
 
     @Override
     public int getSize() {
-        return size;
+        return componentList.size();
     }
 }
